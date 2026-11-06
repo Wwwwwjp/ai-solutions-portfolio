@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "recent_window_days": 730,
+  "patent_type_weights": {
+    "invention": 3.0,
+    "utility_model": 1.5,
+    "design": 1.0
+  },
+  "patent_status_weights": {
+    "active": 1.0,
+    "pending": 0.5,
+    "expired": 0.0
+  },
+  "platform_level_weights": {
+    "national": 5.0,
+    "provincial": 3.0,
+    "municipal": 1.0
+  },
+  "program_level_weights": {
+    "national": 5.0,
+    "provincial": 3.0,
+    "municipal": 1.0,
+    "district": 0.5
+  },
+  "talent_level_weights": {
+    "national": 5.0,
+    "provincial": 3.0,
+    "municipal": 1.0
+  },
+  "financing_round_weights": {
+    "seed": 1.0,
+    "series_a": 2.0,
+    "series_b": 3.0,
+    "series_c_or_later": 4.0,
+    "strategic": 3.0
+  }
+}

@@ -3,6 +3,7 @@
 ## Runnable
 
 - [Workflow Reliability](workflow-reliability/): deterministic synchronization with idempotent replay and explicit conflict handling.
+- [Enterprise Growth Feature Pipeline](enterprise-growth-features/): point-in-time, multi-source feature engineering with transparent weights, train-only imputation, and feature lineage.
 
 ## Planned
 

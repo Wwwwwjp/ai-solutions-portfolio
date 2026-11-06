@@ -21,7 +21,13 @@ Status: runnable.
 
 Demonstrates deterministic synchronization between an upstream source and an operational target. It covers creates, updates, equal-version conflicts, stale targets, orphaned records, idempotent replay, and audit events.
 
-### 2. Schema-aware Text-to-SQL Agent
+### 2. Enterprise Growth Feature Pipeline
+
+Status: runnable.
+
+Demonstrates how to turn heterogeneous enterprise activity records into a leakage-safe feature table. It covers source validation, company-level aggregation, configurable business weights, recency and frequency features, train-scope-only imputation, feature lineage, and data-quality reporting.
+
+### 3. Schema-aware Text-to-SQL Agent
 
 Status: planned.
 
@@ -34,7 +40,7 @@ Should include:
 - failure injection for ambiguous questions, unsafe SQL, and empty results;
 - a deterministic test model so the project runs without paid APIs.
 
-### 3. Supply Chain Exception Intelligence
+### 4. Supply Chain Exception Intelligence
 
 Status: planned.
 

@@ -18,10 +18,11 @@ The projects here are designed around the work of a Forward Deployed Engineer or
 | Project | Status | What it demonstrates |
 | --- | --- | --- |
 | [Workflow Reliability](projects/workflow-reliability/) | Runnable | Idempotent synchronization, optimistic concurrency, conflict isolation, audit events, CLI design, and tests |
+| [Enterprise Growth Feature Pipeline](projects/enterprise-growth-features/) | Runnable | Multi-source validation, point-in-time aggregation, configurable business weights, train-only imputation, and feature lineage |
 | Schema-aware Text-to-SQL Agent | Planned | Schema retrieval, read-only execution, guardrails, and reproducible evaluation |
 | Supply Chain Exception Intelligence | Planned | Multi-source reconciliation, exception scoring, alert routing, and analyst feedback |
 
-The first project uses only the Python standard library and runs without API keys or external services.
+Both runnable projects use synthetic data and do not require API keys or external services. Workflow Reliability uses only the Python standard library; Enterprise Growth Feature Pipeline uses pandas.
 
 ## Quick Start
 
@@ -39,6 +40,18 @@ workflow-reliability \
 
 The CLI is a dry run by default. Add `--apply` to emit create, update, conflict, and orphan audit events, or `--apply --output /tmp/reconciled.json` to also write the updated target file.
 
+The second project runs a full multi-source feature build:
+
+```bash
+cd projects/enterprise-growth-features
+python -m pip install -e .
+enterprise-features \
+  --input-dir examples/data \
+  --as-of 2025-06-30 \
+  --train-ids examples/data/train_company_ids.txt \
+  --output-dir artifacts
+```
+
 ## Repository Map
 
 ```text
@@ -50,6 +63,7 @@ The CLI is a dry run by default. Add `--apply` to emit create, update, conflict,
 │   └── publication-checklist.md
 ├── projects/
 │   ├── README.md
+│   ├── enterprise-growth-features/
 │   └── workflow-reliability/
 └── README.md
 ```
