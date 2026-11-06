@@ -10,13 +10,17 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [
-  { name = "Jiapeng Wang", url = "https://github.com/Wwwwwjp" },
+  { name = "Jiapeng Wang" },
 ]
 classifiers = [
   "Programming Language :: Python :: 3",
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
 ]
+
+[project.urls]
+Homepage = "https://github.com/Wwwwwjp/ai-solutions-portfolio"
+Repository = "https://github.com/Wwwwwjp/ai-solutions-portfolio"
 
 [project.scripts]
 workflow-reliability = "workflow_reliability.cli:main"
