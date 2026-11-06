@@ -1,0 +1,42 @@
+[
+  {
+    "key": "WO-1001",
+    "version": 3,
+    "fields": {
+      "status": "in_progress",
+      "owner": "team-a",
+      "priority": "high"
+    },
+    "updated_at": "2026-11-01T10:00:00Z"
+  },
+  {
+    "key": "WO-1002",
+    "version": 1,
+    "fields": {
+      "status": "new",
+      "owner": "team-b",
+      "priority": "medium"
+    },
+    "updated_at": "2026-11-01T10:05:00Z"
+  },
+  {
+    "key": "WO-1003",
+    "version": 2,
+    "fields": {
+      "status": "blocked",
+      "owner": "team-a",
+      "priority": "high"
+    },
+    "updated_at": "2026-11-01T10:10:00Z"
+  },
+  {
+    "key": "WO-1005",
+    "version": 1,
+    "fields": {
+      "status": "new",
+      "owner": "team-c",
+      "priority": "low"
+    },
+    "updated_at": "2026-11-01T10:15:00Z"
+  }
+]
